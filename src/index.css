@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-aura-bg: #050608;
+  --color-aura-surface: #0F1115;
+  --color-aura-accent: #38BDF8;
+  --color-aura-text: #E0E2E5;
+}
+
+@layer base {
+  body {
+    @apply bg-aura-bg text-aura-text;
+  }
+}
+
+.aura-glow-blue {
+  background: radial-gradient(circle at center, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+}
+
+.aura-glow-purple {
+  background: radial-gradient(circle at center, rgba(168, 85, 247, 0.1) 0%, transparent 70%);
+}
